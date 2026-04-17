@@ -1,0 +1,130 @@
+.login-form {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f172a, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background: #0f172a;
+  padding: 30px 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.login-container h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.login-container p {
+  color: #94a3b8;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-input label {
+  font-size: 13px;
+  color: #cbd5f5;
+}
+
+.login-input input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-input input::placeholder {
+  color: #64748b;
+}
+
+.login-input input:focus {
+  border-color: #38bdf8;
+}
+
+.login-link {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #38bdf8;
+  text-decoration: none;
+  text-align: right;
+  transition: 0.3s;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  position: relative;
+  padding: 12px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+
+.login-btn:hover {
+  background: #0ea5e9;
+}
+
+
+
+@media (max-width: 500px) {
+  .login-container {
+    padding: 24px 18px;
+  }
+
+  .login-container h2 {
+    font-size: 20px;
+  }
+
+  .login-container p {
+    font-size: 12px;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

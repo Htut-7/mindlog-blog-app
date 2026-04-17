@@ -1,0 +1,149 @@
+.comment-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.single-comment {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: 0.2s;
+}
+
+.single-comment:hover {
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+}
+
+.single-comment h4 {
+  margin: 0;
+  font-size: 13px;
+  color: #38bdf8;
+}
+
+.single-comment p {
+  margin: 0;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.comment-action {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+.delete-btn,
+.update-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.delete-btn:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+  transform: scale(1.05);
+}
+
+.update-btn:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+  transform: scale(1.05);
+}
+
+.delete-btn svg,
+.update-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.moment {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.react-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #cbd5e1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 13px;
+}
+
+.react-btn:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+  transform: scale(1.05);
+}
+
+.react-btn svg {
+  fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  .single-comment {
+    padding: 10px;
+  }
+
+  .single-comment h4 {
+    font-size: 12px;
+  }
+
+  .single-comment p {
+    font-size: 13px;
+  }
+
+  .comment-action {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-comment {
+    padding: 10px;
+  }
+
+  .comment-action {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .delete-btn,
+  .update-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
