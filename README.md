@@ -83,25 +83,4 @@ git clone https://github.com/Htut-7/mindlog-blog-app.git
 
 ---
 
-#  This version is:
-
- Real GitHub style  
- Clean structure (like templates you showed)  
- No fake info  
- Recruiter-ready  
- Matches your actual project  
-
----
-
-If you want next upgrade, I can help you:
-
- :contentReference[oaicite:0]{index=0}  
- :contentReference[oaicite:1]{index=1}  
- :contentReference[oaicite:2]{index=2}  
- or :contentReference[oaicite:3]{index=3}
-
-Just tell me 
-=======
-# mindlog-blog-app
-A full-stack blogging web app using React and Firebase with authentication, CRUD posts, and real-time comment features.
 
